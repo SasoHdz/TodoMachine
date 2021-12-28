@@ -4,7 +4,7 @@ import './CreateTodoButton.css';
 function CreateTodoButton(props) {
 
     const onClickCreateButton = () => {
-      alert("I have new todo");
+      props.setOpenModal(true);
     }
 
     return (
