@@ -22,7 +22,7 @@ form {
     border: 2px, solid #202329;
     border-radius: 2px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-    color: #1E1E1F;
+    color: #4754FB;
     font-size: 20px;
     text-align: center;
     padding: 12px;
@@ -37,7 +37,7 @@ form {
   }
   
   textarea:focus {
-    outline-color: #61DAFA;
+    outline-color: #FAD546;
   }
   
   .TodoForm-buttonContainer {
@@ -62,8 +62,8 @@ form {
   }
   
   .TodoForm-button-add {
-    background-color: #61DAFA;
-    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+    background-color: #4754FB;
+    box-shadow: 0px 5px 25px rgba(102, 138, 236, 0.514);
   }
   
   .TodoForm-button-cancel {
