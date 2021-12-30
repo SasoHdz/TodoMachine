@@ -1,6 +1,7 @@
 import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
+import { FiRotateCcw } from "react-icons/fi";
 
 
 function TodoForm() {
@@ -42,7 +43,7 @@ function TodoForm() {
                     onClick={onCancel}
                     className="TodoForm-button TodoForm-button-cancel"
                 >
-                    Cancelar
+                    <FiRotateCcw className="iconCancel" />
                 </button>
                 <button
                     type="submit"

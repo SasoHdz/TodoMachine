@@ -69,3 +69,9 @@ form {
   .TodoForm-button-cancel {
     background: transparent;
   }
+
+  .iconCancel {
+    color: #FAD546;
+    font-size: 44px;
+    font-weight: bold;
+  }

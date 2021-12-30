@@ -1,5 +1,9 @@
 import React from 'react';
 import './TodoItem.css';
+import { FiCheck } from "react-icons/fi";
+import { FiXSquare } from "react-icons/fi";
+
+
 
 function TodoItem(props) {
 
@@ -9,21 +13,17 @@ function TodoItem(props) {
    //Completa esta funcion
     return (
       <li className="TodoItem">
-        <span 
+        <FiCheck
           className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
           onClick = {() => props.onComplete(props.text)}
-        >
-          √
-        </span>
+        />
         <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
           {props.text}
         </p>
-        <span 
+        <FiXSquare
           className="Icon Icon-delete"
-          onClick = {() => props.onDeleted(props.text)}
-        >
-          X
-        </span>
+          onClick = {() => props.onDeleted(props.text)} 
+        />
       </li>
     );
   }
