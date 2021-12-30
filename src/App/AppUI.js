@@ -4,6 +4,8 @@ import { TodoCounter } from '../TodoCounter';
 import { TodoItem } from '../TodoItem';
 import { TodoList } from '../TodoList';
 import { TodoSearch } from '../TodoSearch';
+import { TodoForm } from '../TodoForm';
+import { TodoQuestion } from '../TodoQuestion';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal'
 
@@ -17,6 +19,8 @@ function AppUI() {
       deletedTodos,
       openModal,
       setOpenModal,
+      openModalQuestion,
+      setOpenModalQuestion
     } = React.useContext(TodoContext)
 
     return (
@@ -38,17 +42,17 @@ function AppUI() {
                />
              ))}
            </TodoList>
-
            {!!openModal && (
              <Modal>
-             <p>{searchedTodos[0].text}</p>
+                <TodoForm />
              </Modal>
            )}
         <CreateTodoButton 
           setOpenModal={setOpenModal}
+          openModal={openModal}
         />
     </React.Fragment>
     );
 }
-
+//Buscando como abrir openModalQuestion
 export { AppUI };

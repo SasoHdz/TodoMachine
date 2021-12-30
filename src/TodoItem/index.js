@@ -3,10 +3,10 @@ import './TodoItem.css';
 
 function TodoItem(props) {
 
-   const onClickDelete = (msg) => {
-      alert("Delete todo "+msg)
+   const onClickQuestion = () => {
+      //(!props.completed)? props
    }
-
+   //Completa esta funcion
     return (
       <li className="TodoItem">
         <span 
