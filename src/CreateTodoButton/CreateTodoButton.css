@@ -1,12 +1,12 @@
 .CreateTodoButton {
-    background-color: #FAD546;
-    box-shadow: 0px 5px 25px rgba(235, 250, 97, 0.5);
+    background-color: #48A6E3;
+    box-shadow: 0px 5px 25px #37acfa;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     font-size: 50px;
     position: fixed;
-    bottom: 24px;
+    bottom: 10px;
     right: 24px;
     font-weight: bold;
     color: #FAFAFA;
@@ -15,7 +15,7 @@
     align-items: center;
     height: 64px;
     width: 64px;
-    z-index: 1;
+    z-index: 2;
   
     transform: rotate(0);
     transition: .3s ease;

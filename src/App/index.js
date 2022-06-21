@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { useTodos } from './useTodos';
+
+import { myLogo } from '../myLogo';
 import { TodoHeader } from '../TodoHeader';
 import { TodoCounter } from '../TodoCounter';
 import { TodoItem } from '../TodoItem';
@@ -29,6 +31,8 @@ function App() {
     setSearchValue,
     addTodo, 
   } = useTodos();
+
+  let logo = '';
 
   return (
     <React.Fragment>

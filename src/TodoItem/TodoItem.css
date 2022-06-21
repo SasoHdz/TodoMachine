@@ -1,5 +1,5 @@
 .TodoItem {
-    background-color: rgb(233, 229, 229);
+    background-color: #2B2B69;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -10,7 +10,7 @@
   }
 
 .TodoItem:hover {
-  border:2px solid #FAD546;
+  border:2px solid #e6e4e4;
 }
   
   .TodoItem-p {
@@ -20,7 +20,7 @@
     line-height: 24px;
     font-weight: 400;
     font-weight: bold;
-    color: #4754FB;
+    color: #e6e4e4;
   }
   .TodoItem-p--complete {
     text-decoration: line-through;
@@ -31,12 +31,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
-    width: 48px;
+    height: 30px;
+    width: 30px;
     font-size: 24px;
     font-weight: bold;
-    color:rgb(37, 37, 37);
-    /* background-color: #CCC; */
+    color: #e6e4e4;
   }
   
   .Icon-check {
@@ -49,9 +48,10 @@
   
   .Icon-delete {
     position: absolute;
-    top: -4px;
-    right: -4px;
+    top: 5px;
+    right: 6px;
   }
   .Icon-delete:hover {
     color: red;
   }
+

@@ -1,8 +1,7 @@
 import React from 'react';
 import './TodoItem.css';
-import { FiCheck } from "react-icons/fi";
-import { FiXSquare } from "react-icons/fi";
-
+import { BsFillTrashFill } from "react-icons/bs";
+import { BsBookmarkCheck } from "react-icons/bs";
 
 
 function TodoItem(props) {
@@ -13,14 +12,14 @@ function TodoItem(props) {
    //Completa esta funcion
     return (
       <li className="TodoItem">
-        <FiCheck
+        <BsBookmarkCheck
           className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
           onClick = {() => props.onComplete(props.text)}
         />
         <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
           {props.text}
         </p>
-        <FiXSquare
+        <BsFillTrashFill
           className="Icon Icon-delete"
           onClick = {() => props.onDeleted(props.text)} 
         />
