@@ -1,5 +1,5 @@
 .container{
-    width: 340px;
+    width: 100%;
     background: #616BFF;
     border-radius: 10px;
     display: flex;
@@ -16,6 +16,6 @@ p {
 }
 
 .icon{
-    font-size: 230px;
+    font-size: 190;
     margin: 0 auto;
 }
