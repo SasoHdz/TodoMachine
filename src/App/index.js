@@ -2,7 +2,6 @@ import React from 'react';
 
 import { useTodos } from './useTodos';
 
-import { myLogo } from '../myLogo';
 import { TodoHeader } from '../TodoHeader';
 import { TodoCounter } from '../TodoCounter';
 import { TodoItem } from '../TodoItem';
@@ -32,8 +31,6 @@ function App() {
     addTodo, 
   } = useTodos();
 
-  let logo = '';
-
   return (
     <React.Fragment>
 
@@ -46,7 +43,25 @@ function App() {
           />
         </TodoHeader>
 
-       <TodoList>
+       <TodoList
+          error={error}
+          loading={loading}
+          searchedTodos={searchedTodos}
+          onError = {() => <TodoError/>}
+          onLoading = {() => <Loading/>}
+          onEmptyTodos={() => <TodoHome/>}
+          render={todo => (
+              <TodoItem 
+              key={todo.text} 
+              text = {todo.text}
+              completed={todo.completed}
+              onComplete = {() => completeTodos(todo.text)}
+              onDeleted = {() => deletedTodos(todo.text)}
+            />
+          )}
+       />
+
+       {/* <TodoList>
          {error && <TodoError />} 
          {loading && <Loading />}
          {(!loading && !searchedTodos.length) && <TodoHome />}
@@ -60,7 +75,8 @@ function App() {
             onDeleted = {() => deletedTodos(todo.text)}
            />
          ))}
-       </TodoList>
+       </TodoList> */}
+
        {!!openModal && (
          <Modal>
             <TodoForm 
@@ -69,10 +85,11 @@ function App() {
             />
          </Modal>
        )}
-    <CreateTodoButton 
-      setOpenModal={setOpenModal}
-      openModal={openModal}
-    />
+
+      <CreateTodoButton 
+        setOpenModal={setOpenModal}
+        openModal={openModal}
+      />
 </React.Fragment>
 );
 }
