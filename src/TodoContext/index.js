@@ -11,6 +11,7 @@ function TodoProvider(props) {
         loading,
         error,
       } = useLocalStorage('TODOS_V1',[]);
+      
       const [ searchValue, setSearchValue] = React.useState('');
       const [ openModal, setOpenModal] = React.useState(false);
       const [ openModalQuestion, setOpenModalQuestion] = React.useState(false);
