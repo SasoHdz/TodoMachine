@@ -1,12 +1,12 @@
 import React from "react";
 import './TodoHome.css'
-import { FiThumbsUp } from "react-icons/fi";
+import { BsFillPlusSquareFill } from "react-icons/bs";
 
 function TodoHome() {
     return (
         <div className="container">
             <p>! Crea tu primer ToDo ¡</p>
-            <FiThumbsUp className="icon"/>
+            <BsFillPlusSquareFill className="icon"/>
         </div>
     );
 }

@@ -12,7 +12,9 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { Loading } from '../Loading';
 import { TodoError } from '../TodoError';
 import { TodoHome } from '../TodoHome';
-import { Modal } from '../Modal'
+import { Modal } from '../Modal';
+import { EmptyTodoSearched } from '../EmptyTodoSearched';
+import { ProgressTodos } from '../ProgressTodos';
 
 function App() {
 
@@ -38,6 +40,10 @@ function App() {
           <TodoCounter 
             completedTodos={completedTodos} totalTodos={totalTodos}
           />
+          <ProgressTodos 
+            completedTodos={completedTodos}
+            totalTodos={totalTodos}
+          />
           <TodoSearch 
             searchValue={searchValue} setSearchValue={setSearchValue}
           />
@@ -47,9 +53,12 @@ function App() {
           error={error}
           loading={loading}
           searchedTodos={searchedTodos}
+          totalTodos={totalTodos}
+          searchValue={searchValue}
           onError = {() => <TodoError/>}
           onLoading = {() => <Loading/>}
           onEmptyTodos={() => <TodoHome/>}
+          onEmptyTodoSearched={(rearch) => <EmptyTodoSearched text={rearch}/>}
           render={todo => (
               <TodoItem 
               key={todo.text} 
@@ -60,22 +69,6 @@ function App() {
             />
           )}
        />
-
-       {/* <TodoList>
-         {error && <TodoError />} 
-         {loading && <Loading />}
-         {(!loading && !searchedTodos.length) && <TodoHome />}
-
-         {searchedTodos.map( todo => (
-           <TodoItem 
-            key={todo.text} 
-            text = {todo.text}
-            completed={todo.completed}
-            onComplete = {() => completeTodos(todo.text)}
-            onDeleted = {() => deletedTodos(todo.text)}
-           />
-         ))}
-       </TodoList> */}
 
        {!!openModal && (
          <Modal>

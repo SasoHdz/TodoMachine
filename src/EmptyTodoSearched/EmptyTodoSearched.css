@@ -1,0 +1,20 @@
+.containerText {
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: medium;
+    color: #e6e4e4;
+}
+
+.value{
+    font-weight: bold;
+    color: #48A6E3;
+}
+
+.iconSearch {
+    font-size: 120px;
+}
