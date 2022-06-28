@@ -3,9 +3,10 @@
     border-radius: 15px;
     border: 2px solid #e6e4e4;
     margin: 10px 24px;
-    height: 45px;
+    height: 35px;
     width: calc(100% - 62px);
-    font-size: 24px;
+    max-width: 400px;
+    font-size: 18px;
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -14,7 +15,7 @@
   }
   
   .TodoSearch::placeholder {
-    color: #e6e4e4;
+    color: #b9b9b9;
     font-family: 'Montserrat';
     font-weight: 400;
   }

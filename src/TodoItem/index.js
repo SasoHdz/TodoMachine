@@ -6,10 +6,6 @@ import { BsBookmarkCheck } from "react-icons/bs";
 
 function TodoItem(props) {
 
-   const onClickQuestion = () => {
-      //(!props.completed)? props
-   }
-   //Completa esta funcion
     return (
       <li className="TodoItem">
         <BsBookmarkCheck

@@ -3,6 +3,7 @@ import React from 'react';
 import { useTodos } from './useTodos';
 
 import { TodoHeader } from '../TodoHeader';
+//import { Footer } from '../Footer';
 import { TodoCounter } from '../TodoCounter';
 import { TodoItem } from '../TodoItem';
 import { TodoList } from '../TodoList';
@@ -32,6 +33,11 @@ function App() {
     setSearchValue,
     addTodo, 
   } = useTodos();
+
+  /* let socialMedia = [
+    {link:'https://www.instagram.com/sasohdz_dev/',user:'@SasoHdz_Dev'},
+    {link:'www.linkedin.com/in/isaac-hernández-reséndiz-274024214',user:'Isaac Hernández Reséndiz'},
+  ] */
 
   return (
     <React.Fragment>
