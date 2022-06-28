@@ -1,4 +1,9 @@
-progress {
+.progressBar{
     margin: 0 auto;
     height:25px;
 }
+
+.progressBar-loading{
+    opacity:25%;
+}
+

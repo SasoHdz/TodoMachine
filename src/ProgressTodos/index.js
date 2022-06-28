@@ -2,10 +2,10 @@ import React from "react";
 
 import './ProgressTodos.css';
 
-function ProgressTodos(props){
+function ProgressTodos({totalTodos,completedTodos,loading}){
     return (
-        <progress max={props.totalTodos} value={props.completedTodos}>
-            {props.completedTodos+"%"}
+        <progress className={`progressBar ${loading && "progressBar-loading"}`} max={totalTodos} value={completedTodos}>
+            {completedTodos+"%"}
         </progress>
     );
 }

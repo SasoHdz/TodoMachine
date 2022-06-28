@@ -16,6 +16,7 @@ import { TodoHome } from '../TodoHome';
 import { Modal } from '../Modal';
 import { EmptyTodoSearched } from '../EmptyTodoSearched';
 import { ProgressTodos } from '../ProgressTodos';
+import { ChangeAlertWithStorageListener } from '../ChangeAlert';
 
 function App() {
 
@@ -34,25 +35,21 @@ function App() {
     addTodo, 
   } = useTodos();
 
-  /* let socialMedia = [
-    {link:'https://www.instagram.com/sasohdz_dev/',user:'@SasoHdz_Dev'},
-    {link:'www.linkedin.com/in/isaac-hernández-reséndiz-274024214',user:'Isaac Hernández Reséndiz'},
-  ] */
 
   return (
     <React.Fragment>
 
-        <TodoHeader>
+        <TodoHeader loading={loading}>
           <TodoCounter 
-            completedTodos={completedTodos} totalTodos={totalTodos}
+            completedTodos={completedTodos} totalTodos={totalTodos} 
           />
           <ProgressTodos 
             completedTodos={completedTodos}
             totalTodos={totalTodos}
           />
           <TodoSearch 
-            searchValue={searchValue} setSearchValue={setSearchValue}
-          />
+            searchValue={searchValue} setSearchValue={setSearchValue} 
+          /> 
         </TodoHeader>
 
        <TodoList
@@ -89,6 +86,8 @@ function App() {
         setOpenModal={setOpenModal}
         openModal={openModal}
       />
+
+      <ChangeAlertWithStorageListener />
 </React.Fragment>
 );
 }

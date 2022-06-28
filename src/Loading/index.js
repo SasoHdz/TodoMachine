@@ -1,11 +1,12 @@
 import React from 'react';
+import './Loading.css';
 
 function Loading() {
     return(
-        <section clasName="loader">
-            <div></div>
-            <div></div>
-            <div></div>
+        <section className="loader">
+            <div className="item loader-item1"></div>
+            <div className="item loader-item2"></div>
+            <div className="item loader-item3"></div>
         </section>
     );
 }
