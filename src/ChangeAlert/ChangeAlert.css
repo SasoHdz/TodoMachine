@@ -1,0 +1,27 @@
+.container-load {
+    width:330px;
+    height:220px;
+    border-radius: 15px;
+    background:#2B2B69;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.container-load p {
+    font-size: 16px;
+    font-weight: medium;
+    color: #48A6E3;
+    text-align:center;
+}
+
+.container-load button {
+    width:130px;
+    height:40px;
+    color: #201F37;
+    border-radius: 10px;
+    border: none;
+    background: #48A6E3;
+    box-shadow: 0px 5px 25px #37acfa;
+}

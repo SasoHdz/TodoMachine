@@ -89,8 +89,9 @@ function App() {
       />
 
       <ChangeAlertWithStorageListener 
-        sincronize={sincronizeTodos}
+         sincronize={sincronizeTodos}
       />
+    
 </React.Fragment>
 );
 }
