@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/TodoMachine/static/css/main.b2883ed2.chunk.css",
-    "main.js": "/TodoMachine/static/js/main.d4afa5f9.chunk.js",
-    "main.js.map": "/TodoMachine/static/js/main.d4afa5f9.chunk.js.map",
-    "runtime-main.js": "/TodoMachine/static/js/runtime-main.de66c911.js",
-    "runtime-main.js.map": "/TodoMachine/static/js/runtime-main.de66c911.js.map",
-    "static/js/2.d979060c.chunk.js": "/TodoMachine/static/js/2.d979060c.chunk.js",
-    "static/js/2.d979060c.chunk.js.map": "/TodoMachine/static/js/2.d979060c.chunk.js.map",
+    "main.css": "/TodoMachine/static/css/main.31415602.css",
+    "main.js": "/TodoMachine/static/js/main.9a5ebe2f.js",
     "index.html": "/TodoMachine/index.html",
-    "static/css/main.b2883ed2.chunk.css.map": "/TodoMachine/static/css/main.b2883ed2.chunk.css.map",
-    "static/js/2.d979060c.chunk.js.LICENSE.txt": "/TodoMachine/static/js/2.d979060c.chunk.js.LICENSE.txt"
+    "main.31415602.css.map": "/TodoMachine/static/css/main.31415602.css.map",
+    "main.9a5ebe2f.js.map": "/TodoMachine/static/js/main.9a5ebe2f.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.de66c911.js",
-    "static/js/2.d979060c.chunk.js",
-    "static/css/main.b2883ed2.chunk.css",
-    "static/js/main.d4afa5f9.chunk.js"
+    "static/css/main.31415602.css",
+    "static/js/main.9a5ebe2f.js"
   ]
 }
